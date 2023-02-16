@@ -1,3 +1,10 @@
+
+The following vulnerability report was submitted to the Razer bug reporting system. It was closed as invalid because I reportedly did not explain the impact or provide a video PoC of the full attack from start to finish.
+
+Try for yourself against triage level analysts. Can you understand the below?
+
+---
+
 ## Description
 
 The Razer Synapse Windows installer’s “Chroma Connect” (and I believe other) sub-components is vulnerable to privilege escalation. Depending on the environment variables of the user to runs the installer, this can result in the ability for a non-admin user to achieve arbitrary code execution with SYSTEM privileges. At the least-severe, the vulnerability may simply allow for a UAC bypass to allow an un-elevated process the ability to run code with SYSTEM privileges.
