@@ -8,19 +8,19 @@ The problem with the Razer Synapse installer is that the security of the system 
 
 Aside from promoting a user-level PATH to a system-wide path, the installer also has two other issues that should perhaps be looked at:
 
-1.  environment variables are escaped. e.g. a PATH entry of `%SystemRoot%\\system32` would be replaced with `C:\\WINDOWS\\system32` after the Razer Synapse installer is complete.
-2.  The Razer `ChromaBroadcast\\bin` directories are added **before** the Windows system32 directory.
+1.  environment variables are escaped. e.g. a PATH entry of `%SystemRoot%\system32` would be replaced with `C:\WINDOWS\system32` after the Razer Synapse installer is complete.
+2.  The Razer `ChromaBroadcast\bin` directories are added **before** the Windows system32 directory.
 
 While neither of these two issues might lead to direct security issues, they are both considered poor practices and should probably be resolved.
 
 ## Steps to Reproduce
 
-1.  Create the directory `C:\\bin`
+1.  Create the directory `C:\bin`
 2.  Add this directory to the **user-level** PATH environment variable who will be installing Razer Synapse.
 3.  Install Razer Synapse `RazerSynapseInstaller_V1.12.0.385.exe` with at least the “CHROMA CONNECT” sub-option installed.
 4.  Reboot with a Process Monitor boot log enabled.
-5.  Filter boot log with path contains `c:\\bin`
-6.  Note that several DLLs are attempted to be loaded from `c:\\bin` with SYSTEM-priviliged processes.
+5.  Filter boot log with path contains `c:\bin`
+6.  Note that several DLLs are attempted to be loaded from `c:\bin` with SYSTEM-priviliged processes.
 
 Note that this was discovered with the Crassus tool: <https://github.com/vullabs/Crassus>
 
