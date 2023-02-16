@@ -1,7 +1,7 @@
 
-The following vulnerability report was submitted to the Razer bug reporting system. It was closed as invalid because I reportedly did not explain the impact or provide a video PoC of the full attack from start to finish.
+The following vulnerability report was submitted to the Razer bug reporting system (Inspectiv). It was closed as invalid because I reportedly did not explain the impact or provide a video PoC of the full attack from start to finish.
 
-Try for yourself against triage level analysts. Can you understand the below?
+Triage-level analysts at Inspectiv failed to understand what the below attempts to convey. I've sent similar reports via HackerOne and Bugcrowd, with similar unsuccessful results. Can you do better than the triage at these organizations?
 
 ---
 
