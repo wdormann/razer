@@ -36,17 +36,17 @@ Additionally, the installer should:
 -   Place its own paths at the **end** of any existing PATH entries.
 
 ## Attachments
-razr_crassus.png
+razr_crassus.png  
 ![Crassus results for Razer software](razr_crassus.png)
 
-adminpath_before.png
+adminpath_before.png  
 ![Admin user PATH before software installation](adminpath_before.png)
 
-systempath_before.png
+systempath_before.png  
 ![System PATH before software installation](systempath_before.png)
 
-razr_systempath_after.png
+razr_systempath_after.png  
 ![System PATH after software installation](razr_systempath_after.png)
 
-razr_planted.png
+razr_planted.png  
 ![Planted DLL resulting in calc.exe with SYSTEM privileges](razr_planted.png)
