@@ -9,7 +9,7 @@ The problem with the Razer Synapse installer is that the security of the system 
 Aside from promoting a user-level PATH to a system-wide path, the installer also has two other issues that should perhaps be looked at:
 
 1.  environment variables are escaped. e.g. a PATH entry of `%SystemRoot%\\system32` would be replaced with `C:\\WINDOWS\\system32` after the Razer Synapse installer is complete.
-2.  The Razer ChromaBroadcast\\bin directories are added **before** the Windows system32 directory.
+2.  The Razer `ChromaBroadcast\\bin` directories are added **before** the Windows system32 directory.
 
 While neither of these two issues might lead to direct security issues, they are both considered poor practices and should probably be resolved.
 
